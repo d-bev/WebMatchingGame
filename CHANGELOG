@@ -1,0 +1,69 @@
+Initial Commit
+	Pushed first versions of all files
+	Added README
+	
+Debug Commit
+	Added annotations within app.js to show where error was 'found' using 		
+	F12's console output
+	Added this changelog 
+	
+Debug Commit 2
+	Added some more annotations
+	Added base end-game functions (isGameOver(), displayGameEnd())
+	DISCOVERED BUG BEHAVIOR: the game only breaks upon checking a vertical match of 3
+		Yet, the debug tool points us two the function for determining a valid vertical match of 4
+		Debug tool claims error resides in 'syntax error' that is not present
+	Currently working on locking/deleting the game board after a game has been one or lost (deleteBoard())
+
+Debug Commit 3
+	Added replaceCandies(), allowing for technically-infinite board play in the absence of a win condition (and lose condition)
+	All Functional Requirements for WPD2 are met with this commit
+	
+Debug Commit 4
+	Added basic CSS stylings to make the web page easier to look at
+	Bug is unresolved, but the behavior has been confirmed
+
+Debug Resolution
+	I AM BETTER THAN YOU ANIA KUBOW AND I DESERVE ALL OF YOUR SUBSCRIBERS:
+		4-5 serious off-by-one errors when considering error cases in valid matches
+		Neglecting of array's end-case --> the bottom right square was unmatchable
+	Probably not even forklift certified, moron.
+
+Polish
+	Added a .gitignore file
+	Implemented matches of 5 candies
+	Changed win condition to a loss condition (running out of moves)
+	Added basic features to display how many moves are left
+
+DB Integration - Setup
+	Added:
+		package.json
+		package-lock.json
+		index.js
+		views:
+			login
+			register
+			show
+			userPlay
+			edit
+		static:
+			index.html
+	File manipulation and code adjustments in attempt to fix Issue #1 - "Too Bad"
+	Duplicates of favicon.ico in various locations in an attempt to fix Issue #1 - "Too Bad"
+
+WPD3 ALL FR 
+	Adjusted file locations in attempts to fix Issue #2 - "Too Bad"
+	Stability for EJS code and game loop
+	Static file almost completely implemented
+	Registration FR met, all others either partially functional or broken
+
+WPD4 - This should be a group project
+	Desperate attempts and hours of work trying to implement other FRs regarding database functionality - "Too Bad"
+	Updated the README to fit 'final' version
+	
+WPD4 - Debug
+	Added Issue #3
+	Re-added error.ejs for error reporting (now needed for validation)
+	Some CSS tweaks and optimizations, implementation of an actual color scheme will come soon
+
+WPD4 - More CSS and Debug

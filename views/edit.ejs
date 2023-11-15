@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edit Account Information</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            table, th {
+                border: solid 1px black;
+                background-color: lightsteelblue;
+                margin: auto;
+            }
+            td {
+                border: dashed 1px black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Edit Your Information</h2>
+        <% users.forEach(function(response) { %>
+        <form action="/edit/<%= response._id %>" method="POST">
+            <table>
+                <tr>
+                    <td class="username">
+                        <input type="text" value="<%= response.username %>" name="username">
+                        <input type="hidden" value="<%= response._id %>" name="id">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="password">
+                        <input type="text" value="<%= response.password %>" name="password">
+                    </td>
+                </tr>
+        <% }) %>
+            </table>
+            <p>
+                <button><a href="/play">Play Game!</a></button>
+                <button><a href="/show">List All</a></button>
+                <button type="submit">Save Changes</button>
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "wdfp",
+  "version": "1.0.0",
+  "description": "web dev final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzaga-CPSC-Fall-2021-Olivares/cpsc-314-web-development-final-project-d-bev.git"
+  },
+  "author": "d-bev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzaga-CPSC-Fall-2021-Olivares/cpsc-314-web-development-final-project-d-bev/issues"
+  },
+  "homepage": "https://github.com/Gonzaga-CPSC-Fall-2021-Olivares/cpsc-314-web-development-final-project-d-bev#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "ejs-lint": "^1.2.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongo-sanitize": "^1.1.0",
+    "mongodb": "^4.2.1",
+    "mongoose": "^6.0.14",
+    "underscore": "^1.13.1",
+    "validatorjs": "^3.22.1"
+  }
+}

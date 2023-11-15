@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>User List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            h1 {
+                text-align: center;
+            }
+            table, th {
+                border: solid 1px black;
+                background-color: lightsteelblue;
+                margin: auto;
+            }
+            td {
+                border: dashed 1px black;
+            }
+            .nav {
+                text-align: center;
+            }
+            .container {
+                margin: auto;
+                width: 75%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>User Registration Results</h1>
+        <br><hr><br>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>Passcode</th>
+                </tr>
+                <% users.forEach(function(response) { %>
+                <tr>
+                    <td id="username">
+                        <%= response.username %>
+                    </td>
+                    <td id="password">
+                        <%= response.password %>
+                    </td>
+                    <td>
+                        <a href="/edit/<%= response._id %>">Edit</a>
+                        <a href="/delete/<%= response._id %>">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+            </table>
+        </div>
+        <br><hr><br>
+        </div>
+        <div class="nav">
+                <button><a href="/login">Login</a></button>
+                <button><a href="../static/index.html">Static File For Presentation</a></button>
+                <button><a href="/logout">Log Out</a></button>
+                <button><a href="/play">Play Game!</a></button>
+        </div>
+    </body>
+</html>

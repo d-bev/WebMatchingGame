@@ -1,0 +1,54 @@
+Project name: 
+
+	Operation: O.L.I.V.A.R.E.S.
+
+Description: 
+
+	The final project will be a matching game (like Candy Crush and Bejeweled), but played in a browser. The game will implement full-stack javascript in order to implement typical game functions (i.e saving a profile’s progress on a database). This project was originally a school project, but will become something I plan to continuously work on. Thus community help is encouraged.
+
+Installation: 
+
+	Download files from GitHub
+	Game requires installations of:
+		npm	(NodeProjectManager)
+		For Dependencies of:
+			"bcrypt": "^5.0.1",
+			"body-parser": "^1.19.0",
+			"ejs": "^3.1.6",
+			"ejs-lint": "^1.2.1",
+			"express": "^4.17.1",
+			"express-session": "^1.17.2",
+			"mongo-sanitize": "^1.1.0",
+			"mongodb": "^4.2.0",
+			"mongoose": "^6.0.13",
+			"sanitize": "^2.1.0",
+			"underscore": "^1.13.1",
+			"validatorjs": "^3.22.1"
+
+	Installations may be required for:
+		Basic Javascript				(For JSON functionality)
+		Basic NodeJS					(For downloading npm and modules)
+		HTTP							(Web Module)
+
+Usage: 
+
+	Static Version 	(No database integration, essentially for demonstration pruposes):
+		simply open index.html (found in the 'static' subfolder) in a browser. Chrome and Firefox are preferable for stability.
+
+	Full Version	(Full databse integration):
+		No .exe file exists.
+		You can launch the game by running "node index.js" in an appropriate terminal.
+		You can also configure a launch.json file and use that to launch the game instead.
+
+Contributing: 
+
+	No real requirements, a simple encapsulating commit message is enough as long as your code is easily understandable (labeled, explanatory comments, etc).
+	That being said, please don't over-explain (comments are cluttering code): if changes are in depth, feel free to add details to CHANGELOG, or make a post in the repository.
+
+Credits: 
+
+	Dominic Bevilacqua - Project Lead
+
+License: 
+
+	GNU GPLv3 ("lets people do almost anything they want with your project, except distributing closed source versions.")

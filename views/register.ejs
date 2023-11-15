@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>User Log-In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .error {
+                background-color: red;
+            }
+            form, fieldset, p, p>label{
+                background-color: lightsteelblue;
+                color: black;
+            }
+            legend {
+                background-color: lightsteelblue;
+            }
+            p{
+                display: grid;
+                grid-template-columns: 2, auto;
+            }
+            p>input {
+                background-color: lightsteelblue;
+            }
+            input[type="submit"]{
+                background-color: lightsteelblue;
+            }
+            a:active{
+                color:black;
+            }
+            a:checked{
+                color: darkslategrey;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <form action="/register" method="POST">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <p>
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" id="username" placeholder="Enter a username" required>
+                    <span id="username" class="error">
+                        <% if(usernameError.length > 0) { %>
+                            Error: <%= usernameError %>
+                        <% } %>
+                    </span>
+                </p>
+                <p>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Enter a password" required>
+                    <span id="password" class="error">
+                        <% if(passwordError.length > 0) { %>
+                            Error: <%= passwordError %>
+                        <% } %>
+                    </span>
+                </p>
+                <br>
+                <input type="submit" value="Register" readonly>
+                <br><br>             
+            </fieldset>
+        </form>
+        <br>
+        <div class="nav">
+            <button><a href="../static/index.html">Static File For Presentation</a></button>
+            <button><a href="/login">Login</a></button>
+            <button><a href="/show">Show Submissions</a></button>
+            <button><a href="/logout">Log Out</a></button>
+        </div>
+    </body>
+</html>

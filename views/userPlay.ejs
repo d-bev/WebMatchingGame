@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bejeweled is better</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="../static/favicon.ico">
+        <script src="../static/script.js" charset="utf-8"></script>
+        <style>
+            .nav {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                background: none;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body class="container">
+
+        <div class="score-board">
+            <h2 id="score-header">Score: <span id="score">0</span></h2>
+            <h2 id="moves-header">Moves Left: <span id="moves">30</span></h2>
+        </div>
+
+        <div class="grid"></div>
+
+        <div id="hidden" class="hide score-board">
+            <!-- form for updating user's highscore -->
+            <form action="/edit/:id" method="POST">
+                <h2 id="highscore-header">
+                    <span id="username"><%= username %></span>
+                    's High-Score: 
+                    <span id="highscore"><%= highscore %></span>
+                </h2>
+                <input type="submit" value="Update My HighScore!" readonly>
+            </form>
+        </div>
+        <div class="nav">
+            <button><a href="/show">Show Submissions</a></button>
+            <button><a href="/logout">Log Out</a></button>
+        </div>
+    </body>
+</html>
